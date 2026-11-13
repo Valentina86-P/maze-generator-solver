@@ -1,15 +1,22 @@
 package maze.datastructure;
 public class QueueArrayBased implements QueueInterface {
-  private final int MAX_QUEUE = 50; // maximum size of queue
+  private final int MAX_QUEUE; // maximum size of queue
   private Object[] items;
   private int front, back, count;
   
+
   public QueueArrayBased() {
-    items = new Object[MAX_QUEUE];  
-    front = 0;
-    back = MAX_QUEUE-1; 
-    count = 0;
-  }  // end default constructor
+	    this(50); // default size, same as in the lab
+	  }  // end default constructor
+
+	  // creates a queue that can hold up to 'capacity' items
+	  public QueueArrayBased(int capacity) {
+	    MAX_QUEUE = capacity;
+	    items = new Object[MAX_QUEUE];
+	    front = 0;
+	    back = MAX_QUEUE-1;
+	    count = 0;
+	  }  // end constructor
 
   // queue operations:
   public boolean isEmpty() {
