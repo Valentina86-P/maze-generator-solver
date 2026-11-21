@@ -1,0 +1,60 @@
+commit 58db3baf254ce5338e8cda0374b7846903d66f14
+Author: Valentina Pruteanu <B00176037@myTUDublin.ie>
+Date:   Sat Nov 21 13:19:52 2026 +0000
+
+    Add README with run instructions and design choices
+
+commit 483056036e4f3ea247a038862c26890a237fffc2
+Author: Valentina Pruteanu <B00176037@myTUDublin.ie>
+Date:   Sat Nov 21 12:58:59 2026 +0000
+
+    Add Swing GUI with MazeFrame and MazeCanvas
+    
+    MazeFrame (JFrame) asks for the maze size and opens the window.
+    MazeCanvas (JPanel) draws every cell with drawCell() and uses a
+    Swing Timer to animate DFS generation and then the BFS search.
+
+commit a8a38a5e03944ca7c1126cd9c52b2bbd5c8d082d
+Author: Valentina Pruteanu <B00176037@myTUDublin.ie>
+Date:   Fri Nov 13 13:08:07 2026 +0000
+
+    Add BFS maze solver using Queue from Lab 4
+    
+    MazeSolver finds the shortest path from top-left to bottom-right
+    with breadth-first search and parent pointers. The path is rebuilt
+    with the Stack from Lab 3. QueueArrayBased now takes a capacity.
+    SolverCheck tests 10x10, 30x30, 100x100 and edge cases.
+
+commit 4ac617f9c375104a3e38abf65ff27ba4f1cfcea0
+Author: Valentina Pruteanu <B00176037@myTUDublin.ie>
+Date:   Fri Nov 13 12:02:12 2026 +0000
+
+    Add DFS maze generator using Stack from Lab 3
+    
+       MazeGenerator carves a perfect maze with randomized depth-first
+       search and backtracking, using StackReferenceBased from Lab 3.
+       GeneratorCheck tests 10x10, 30x30 and edge cases (1x1, 1x8).
+
+commit 920e695c013d8831eae674845f57254ba64a8466
+Author: Valentina Pruteanu <B00176037@myTUDublin.ie>
+Date:   Thu Nov 12 11:10:01 2026 +0000
+
+    Add Grid class and GridCheck test
+
+commit 7460eade194611ae5c3f68d59437aa5b8624098d
+Author: Valentina Pruteanu <B00176037@myTUDublin.ie>
+Date:   Wed Nov 11 17:42:32 2026 +0000
+
+    Add Grid class with boundary handling and console print
+
+commit 51a257dd2d5cd9fe4f01668bde0d54e0aa1fdeaa
+Author: Valentina Pruteanu <B00176037@myTUDublin.ie>
+Date:   Wed Nov 11 17:03:03 2026 +0000
+
+    Add Direction, Cell and reuse Stack (Lab 3) and Queue (Lab 4)
+
+commit 59d0cccf3b8c99f6188e9b207877220fb258d90f
+Author: Valentina Pruteanu <B00176037@myTUDublin.ie>
+Date:   Wed Nov 11 15:25:18 2026 +0000
+
+    Initial project setup
