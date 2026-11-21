@@ -14,7 +14,7 @@ public class SolverCheck {
     public static void main(String[] args) {
         testSize(10, 10, true);     // size from the assignment, printed
         testSize(30, 30, false);    // size from the assignment
-        testSize(100, 100, false);  // big maze, to check it still works
+        testSize(100, 100,false );  // big maze, to check it still works
         testSize(1, 1, false);      // edge case: start and exit are the same cell
         testSize(1, 8, false);      // edge case: only one row
         testSize(8, 1, false);      // edge case: only one column
